@@ -1,0 +1,89 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ccc;
+    background-color: #5C2439;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+form {
+    background-color: #4d152a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ccc;
+    font-size: 20px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"], .calificacion {
+    background-color: #4d152a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+input[type="submit"]:hover, .calificacion:hover {
+    background-color: #63223a;
+}
+.calificacion {
+    display: inline-block;
+}
+.calificacion-group {
+    margin: 15px 0;
+}
+.calificacion input {
+    display: none;
+}
+.calificacion label {
+    background-color: #5C2439;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+}
+.calificacion label:hover {
+    background-color: #5C2439;
+}
+.calificacion input:checked + label {
+    background-color: #5C2439;
+}
+
+button{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #5C2439;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+
+
+}

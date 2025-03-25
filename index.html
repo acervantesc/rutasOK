@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Rutas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.jpg" alt="Logo movital" width="100">
+        <h1>Formulario de Rutas Seguras</h1>
+     
+        </header>
+
+    <form action="/enviar-datos" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <br>
+    <button id="addMarker">Agregar Marcador</button>
+    <button id="drawRoute">Dibujar Ruta</button>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu7TwQGgxpsGSTUlsDqLfbZaMlP2jYcUY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+
+ 
+        <label for="ruta">Descripción de la Ruta:</label>
+        <textarea id="ruta" name="ruta" rows="4" required></textarea>
+
+
+        <div class="calificacion-group">
+            <label>Califica la Ruta:</label>
+            <div class="calificacion">
+                <input type="radio" id="segura" name="calificacion" value="Segura" required>
+                <label for="segura">Segura</label>
+            </div>
+            <div class="calificacion">
+                <input type="radio" id="no-segura" name="calificacion" value="No Segura" required>
+                <label for="no-segura">No Segura</label>
+            </div>
+            <div class="calificacion">
+                <input type="radio" id="peligrosa" name="calificacion" value="Peligrosa" required>
+                <label for="peligrosa">Peligrosa</label>
+            </div>
+        </div>
+
+        <label for="puntos-seguros">Puntos Seguros/Inseguros (separar por comas):</label>
+        <input type="text" id="puntos-seguros" name="puntos-seguros">
+
+        <label for="comentarios">Comentarios Adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <input id= boton type="submit" value="Enviar">
+    </form>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu7TwQGgxpsGSTUlsDqLfbZaMlP2jYcUY&callback=initMap"></script>
+</body>
+</html>
